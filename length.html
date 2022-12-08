@@ -12,11 +12,11 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="guide">
+    <section class="container">
+        <header>
             <h1>Length Metrics</h1>
             <p>Input on top field</p>
-        </div>
+        </header>
 
         <div id="option-container">
 
@@ -48,13 +48,19 @@
 
         </div>
 
-        <div class="btn-menu">
-            <a href="index.html"><button class="btn btn-menu">Menu</button></a>
-        </div>
+        <nav class="btn-menu">
+            <button class="btn btn-menu" onClick="getLink(this)" value="index.html">Menu</button>
+        </nav>
 
-    </div>
+    </section>
 
     <script src="assets/js/lengthscript.js"></script>
+    <script>
+        /* this function opens a link when the button is clicked */
+        function getLink(link) {
+            location.href = link.value;
+        }
+    </script>
 </body>
 
 

@@ -17,6 +17,10 @@ body {
     background-color: rgba(22, 9, 56, 0.726);
 }
 
+h1 {
+    font-size: 2.5em;
+}
+
 /* container wraps all content of the page*/
 .container {
     display: grid;
@@ -29,8 +33,8 @@ body {
     box-shadow: 0 0 10px 2px;
 }
 
-/* guide serve as a header with a instruction */
-.guide {
+/* header with a instruction */
+header {
     text-align: center;
     height: 20vh;
 }
@@ -38,9 +42,9 @@ body {
 /* buttons fit inside this container*/
 #option-container {
     text-align: center;
-    display: flex;
+    justify-content: center;
     border-radius: 5px;
-    height: 30vh;
+    padding-bottom: 20vh;
 }
 
 /* Button style used throughout the web app*/
@@ -52,6 +56,7 @@ body {
     margin: 5px 10px 5px 10px;
     background-color: rgb(65, 55, 110);
     color: white;
+    width: 30vw;
 }
 
 /* button hover effect */
@@ -64,6 +69,7 @@ body {
     display: grid;
     justify-content: center;
     align-items: center;
+    width: auto;
 }
 
 /* style applied to field where data is handle*/
@@ -76,6 +82,11 @@ body {
 /* Media query for screen above 768 pixel*/
 
 @media only screen and (max-width: 768px) {
+
+    h1 {
+        font-size: 2em;
+    }
+
     #option-container {
         display: grid;
     }

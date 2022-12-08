@@ -10,19 +10,25 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="guide">
+    <section class="container">
+        <header>
             <h1>Easy Metrics</h1>
             <p>Click on the conversion needed</p>
-        </div>
-        <div id="option-container">
-            <a href="length.html"><button class="btn">Length</button></a>
-            <a href="weight.html"><button class="btn">Weight</button></a>
-            <a href="time.html"><button class="btn">Time</button></a>
-            <a href="temperature.html"><button class="btn">Temperature</button></a>
-        </div>
-    </div>
+        </header>
+        <nav id="option-container">
+            <button class="btn" onClick="getLink(this)" value="length.html">Length</button>
+            <button class="btn" onClick="getLink(this)" value="weight.html">Weight</button>
+            <button class="btn" onClick="getLink(this)" value="time.html">Time</button>
+            <button class="btn" onClick="getLink(this)" value="temperature.html">Temperature</button>
+        </nav>
+    </section>
 
+    <script>
+        /* this function opens a link when the button is clicked */
+        function getLink(link) {
+            location.href = link.value;
+        }
+    </script>
 </body>
 
 </html>
