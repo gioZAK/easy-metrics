@@ -1,3 +1,4 @@
+// DOM
 const input = document.getElementById("input");
 const result = document.getElementById("result");
 const inputType = document.getElementById("inputType");
@@ -10,11 +11,13 @@ resultType.addEventListener("change", timeCalc);
 
 function timeCalc() {
 
-    //This function compares the user input and calculates 
+    // This function receives the user input and calculates 
+    // the math itself was taken from Google
 
     let inputFrom = inputType.value;
     let resultTo = resultType.value;
 
+    // calculate seconds to minutes or hour
     if (inputFrom === "seconds" && resultTo === "seconds") {
         result.value = Number(input.value);
     } else if (inputFrom === "seconds" && resultTo === "minutes") {
@@ -24,6 +27,7 @@ function timeCalc() {
         result.value = Number(input.value) / 3600;
     }
 
+    // calculate minutes to seconds or hour
     if (inputFrom === "minutes" && resultTo === "seconds") {
         result.value = Number(input.value) * 60;
     } else if (inputFrom === "minutes" && resultTo === "minutes") {
@@ -31,10 +35,9 @@ function timeCalc() {
 
     } else if (inputFrom === "minutes" && resultTo === "hours") {
         result.value = Number(input.value) / 60;
-
     }
 
-
+    // calculate hours to second or minutes
     if (inputFrom === "hours" && resultTo === "seconds") {
         result.value = Number(input.value) * 3600;
 
@@ -43,7 +46,6 @@ function timeCalc() {
 
     } else if (inputFrom === "hours" && resultTo === "hours") {
         result.value = Number(input.value);
-
     }
 
 }

@@ -1,3 +1,4 @@
+// DOM
 const input = document.getElementById("input");
 const result = document.getElementById("result");
 const inputType = document.getElementById("inputType");
@@ -10,11 +11,13 @@ resultType.addEventListener("change", weightCalc);
 
 function weightCalc() {
 
-    //This function compares the user input and calculates 
+    // This function receives the user input and calculates 
+    // the math itself was taken from Google
 
     let inputFrom = inputType.value;
     let resultTo = resultType.value;
 
+    // calc gram to kg or pounds
     if (inputFrom === "gram" && resultTo === "gram") {
         result.value = Number(input.value);
     } else if (inputFrom === "gram" && resultTo === "kg") {
@@ -24,6 +27,7 @@ function weightCalc() {
         result.value = Number(input.value) / 453.6;
     }
 
+    // calc kg to gram or pounds
     if (inputFrom === "kg" && resultTo === "gram") {
         result.value = Number(input.value) * 1000;
     } else if (inputFrom === "kg" && resultTo === "kg") {
@@ -32,7 +36,7 @@ function weightCalc() {
         result.value = Number(input.value) * 2.205;
     }
 
-
+    // calc pounds to gram or kg
     if (inputFrom === "pounds" && resultTo === "gram") {
         result.value = Number(input.value) * 453.6;
     } else if (inputFrom === "pounds" && resultTo === "kg") {

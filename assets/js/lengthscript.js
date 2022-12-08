@@ -1,3 +1,4 @@
+// DOM
 const input = document.getElementById("input");
 const result = document.getElementById("result");
 const inputType = document.getElementById("inputType");
@@ -9,12 +10,13 @@ inputType.addEventListener("change", lengthCalc);
 resultType.addEventListener("change", lengthCalc);
 
 function lengthCalc() {
-
-    //This function compares the user input and calculates 
+    // This function receives the user input and calculates 
+    // the math itself was taken from Google
 
     let inputFrom = inputType.value;
     let resultTo = resultType.value;
 
+    //calculates cm to inches, foots or miles
     if (inputFrom === "centimeter" && resultTo === "inches") {
         result.value = Number(input.value) * 0.3937;
 
@@ -26,6 +28,7 @@ function lengthCalc() {
 
     }
 
+    //calculates meter to inches, foots or miles
     if (inputFrom === "meter" && resultTo === "inches") {
         result.value = Number(input.value) * 39.37;
 
@@ -37,7 +40,7 @@ function lengthCalc() {
 
     }
 
-
+    //calculates km to inches, foots or miles
     if (inputFrom === "kilometer" && resultTo === "inches") {
         result.value = Number(input.value) * 39370;
 
@@ -46,7 +49,6 @@ function lengthCalc() {
 
     } else if (inputFrom === "kilometer" && resultTo === "miles") {
         result.value = Number(input.value) / 1.609;
-
     }
 
 }
