@@ -82,9 +82,6 @@
  ### JavaScript
   * As a scripting language.
 
- ### Google fonts
-  * As a font resource.
-
  ### GitHub
   * As a software hosting platform to keep project in a remote location.
 
