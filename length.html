@@ -2,11 +2,15 @@
 <html lang="en">
 
 <head>
-
+    <!--Meta Tags-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WebApp for metric conversion">
+    <meta name="keywords" content="metric conversion, kg to lbs, miles to km, metrics">
+    <!--CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
+
     <title>Length Metric</title>
 
 </head>
@@ -17,11 +21,11 @@
             <h1>Length Metrics</h1>
             <p>Input on top field</p>
         </header>
-
+        <!--Intup Output-->
         <div id="option-container">
 
             <div id="converter-body">
-
+                <!--User Input-->
                 <div class="converter-container">
                     <input type="number" placeholder="0" id="input">
 
@@ -35,7 +39,7 @@
                     </select>
 
                 </div>
-
+                <!--Conversion Output-->
                 <div class="converter-container">
                     <input type="number" placeholder="0" id="result" disabled>
 
@@ -53,13 +57,13 @@
             </div>
 
         </div>
-
+        <!--Back to menu button-->
         <nav class="btn-menu">
             <button class="btn btn-menu" onClick="getLink(this)" value="index.html">Menu</button>
         </nav>
 
     </section>
-
+    <!--JavaScript-->
     <script src="assets/js/lengthscript.js"></script>
     <script>
         /* this function opens a link when the button is clicked */
@@ -68,6 +72,5 @@
         }
     </script>
 </body>
-
 
 </html>

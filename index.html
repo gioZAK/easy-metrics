@@ -2,10 +2,15 @@
 <html lang="en">
 
 <head>
+    <!--Meta tags-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WebApp for metric conversion">
+    <meta name="keywords" content="metric conversion, kg to lbs, miles to km, metrics">
+    <!--CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
+
     <title>Easy Metrics</title>
 </head>
 
@@ -15,14 +20,17 @@
             <h1>Easy Metrics</h1>
             <p>Click on the conversion needed</p>
         </header>
+        <!--User options-->
         <nav id="option-container">
             <button class="btn" onClick="getLink(this)" value="length.html">Length</button>
             <button class="btn" onClick="getLink(this)" value="weight.html">Weight</button>
             <button class="btn" onClick="getLink(this)" value="time.html">Time</button>
             <button class="btn" onClick="getLink(this)" value="temperature.html">Temperature</button>
         </nav>
+        <!--End User options-->
     </section>
 
+    <!--JavaScript This function is used in the buttons-->
     <script>
         /* this function opens a link when the button is clicked */
         function getLink(link) {
