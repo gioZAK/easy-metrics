@@ -1,9 +1,9 @@
-# [Easy Metrics]()
+# [Easy Metrics](https://giozak.github.io/easy-metrics/)
 
- ![](/assets/images/)
  This is website serves as a tool for metric conversions. It offers length, weight, temperature and time metrics, such as Pounds to Kilograms or Kelvins to Celcius.
+ ![](/assets/images/mainpage.png)
 
- You can check the website here.
+ You can check the website [here](https://giozak.github.io/easy-metrics/).
 
 ---
 # Table of contents
@@ -24,7 +24,7 @@
 
 ### Owner goals 
  * Provide an easy way to convert metrics.
- * Friendly design such as young kids to elder people can use it.
+ * Friendly UX in order for elder and kids to use the website easily.
  * Fast to load webpage.
 
 ### User Goals
@@ -108,16 +108,21 @@
 ### Chrome Dev Tool
  Throughout the developement of the website Chrome Dev Tool was used to fix any bugs during production.
 
+### LightHouse
+![](/assets/images/lighthouse.jpg)
+
 [Back to Table of contents](#table-of-contents)
 
 ## Deployment
 
 - The site was deployed to GitHub. In order to deploy these steps were followed: 
-  - Inside GitHub repository, navigate to the Settings tab ;
-  - From the source section drop-down menu, select the Master Branch ;
-  - Click save, the page will auto refresh and it will show the deployment status. 
+  - Inside GitHub Easy Metric repository, navigate to the Settings tab found on the top side of the page;
+  - On the left side of the page, click on Pages ;
+  - Inside GitHub Pages, in the Branch section, select main and save. 
+  - Wait until the site is built
+  - Deployed link will show on top of GitHub Pages tab.
 
-The live link can be found here
+The live site link - https://giozak.github.io/easy-metrics/
 
 [Back to Table of contents](#table-of-contents)
 
@@ -130,21 +135,22 @@ The live link can be found here
     Formulas needed in the conversion calculation
 
 ### Chart JS
-    Script to link buttons.(#https://www.youtube.com/watch?v=xVMkFJZhZYU)
+    Script to link buttons.
 
 ### insideTheDiv
-    Javascript functions.
+    Javascript functions idea.
  
-
 
 
 
 [Back to Table of contents](#table-of-contents)
 ## Screenshots
-![](/assets/images/)
-![](/assets/images/)
-![](/assets/images/)
-![](/assets/images/)
-![](/assets/images/)
+![](/assets/images/mainpage.png)
+![](/assets/images/lengthpage.png)
+![](/assets/images/weightpage.png)
+![](/assets/images/timepage.png)
+![](/assets/images/temperaturepage.png)
+
+
 
 [Back to Table of contents](#table-of-contents)
